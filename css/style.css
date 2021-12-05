@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Main content starts here... */
+#main-content {
+  width: 75%;
+  position: absolute;
+  right: 0px;
+  top: 100px !important;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.section-content,
+section {
+  height: 700px;
+}
+.section-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  padding-left: 22px !important;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.active {
+  color: #000 !important;
+  font-weight: bold !important;
+  /* border-right: 5px solid #76c59c; */
+  display: block;
+  width: 100%;
+}
+
+/* Side bar starts here... */
+#side-bar,
+#main-content {
+  padding: 30px;
+}
+
+#side-bar {
+  width: 15%;
+  position: fixed;
+  left: 0;
+  padding-left: 50px;
+  border-right: 1px solid #c4c3c4;
+}
+
+.side-bar__content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.side-bar__content > h3 small {
+  color: #c4c3c4;
+}
+.side-bar__content > nav ul li {
+  margin-bottom: 20px;
+}
+.side-bar__content > nav ul li a {
+  color: #c4c3c4;
+  transition: all ease-out 250ms;
+}
+.side-bar__social-icons ul {
+  display: flex;
+}
+.side-bar__social-icons ul li {
+  padding: 10px;
+}
+.side-bar__social-icons ul li:first-child {
+  padding-left: 0px;
+}
+.side-bar__social-icons ul li span {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.4em;
+}
+/* Side bar ends  here... */
+
+/* Header starts here... */
+#header,
+#footer {
+  width: 75%;
+  position: fixed;
+  padding: 30px;
+}
+
+#header {
+  top: 0;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.header__content nav ul {
+  display: flex;
+}
+.header__content h3 {
+  color: #383738;
+  padding-top: 25px;
+}
+.header__content nav ul li {
+  padding: 20px;
+}
+
+.header__content nav ul li a,
+#footer a {
+  padding: 10px 20px;
+  border: 1px solid #d5aef1;
+  border-radius: 50px;
+  color: #706f72;
+}
+/* Header ends here... */
+
+/* Welcome page starts here... */
+
+/* Crypto bank starts here */
+.your-crypto h6 {
+  font-size: 1.1em;
+  color: #c4c3c4;
+}
+.your-crypto h1 {
+  font-size: 3em;
+  background: -webkit-linear-gradient(180deg, #a071f9, #c973e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.your-crypto h1 span {
+  height: 5px;
+  width: 400px;
+  display: block;
+  background: -webkit-linear-gradient(180deg, #a071f9, #c973e5);
+}
+
+.your-crypto a,
+.cryptobank__cash-back a,
+.exchange__buy-sell a {
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
+/* Crypto bank ends here... */
+
+/* Atm card starts here... */
+.atm-cards {
+  position: relative;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.atm-cards__content {
+  width: 300px;
+  height: 160px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: -2px -2px 20px #c4c3c4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+}
+.atm-cards__content.one {
+  top: 180px;
+  left: 30px;
+  transform: rotate(80deg);
+  background: #f5f4f5;
+}
+.atm-cards__content.two {
+  top: 100px;
+  left: 150px;
+  transform: rotate(30deg);
+  background-image: conic-gradient(
+    #86e8f9,
+    #c973e5,
+    #e9eefa,
+    #f7cafc,
+    #d4c5fa,
+    #b1dffc,
+    #86e8f9,
+    #c973e5
+  );
+}
+
+.atm_cards__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-logo {
+  position: relative;
+}
+.card-logo span:first-child {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: #ec011e;
+  border-radius: 50%;
+  position: absolute;
+}
+.card-logo span:last-child {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  background-color: rgba(243, 125, 28, 0.8);
+}
+
+.atm_cards__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card-balance span small {
+  display: block;
+  color: #c5c4c5;
+  font-size: 0.7em;
+}
+.card-number span,
+.card-expiry-date span {
+  font-size: 0.8em;
+}
+.card-number span,
+.card-balance span,
+.card-expiry-date span {
+  color: #3f4454;
+  font-weight: bold;
+}
+/* Atm card ends here... */
+
+/* Currencies card starts here... */
+.currencies {
+  position: relative;
+}
+.currencies__content {
+  width: 220px;
+  min-height: 500px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgba(209, 208, 209, 0.5) 3px 5px 1px 5px;
+  padding: 20px;
+  position: absolute;
+  right: 30px;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.currencies__header,
+.currencies__footer,
+.currencies__favourite-currencies {
+  display: flex;
+  justify-content: space-between;
+}
+.currencies__show-balance {
+  background: #f3f7f7;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #fff;
+  box-shadow: 1px 1px 10px #c4c3c4;
+  transform: rotate(359deg);
+  margin-top: 30px;
+}
+
+.currencies__favourite-currencies {
+  box-shadow: 0.5px 1px 1px 1px #f4f4f4;
+  padding: 10px;
+  border-radius: 2px;
+}
+.currencies__favourite-currencies > div h6 {
+  color: #56555e;
+}
+.currencies__favourite-currencies > div:first-child {
+  display: flex;
+}
+.currencies__favourite-currencies > div:first-child img {
+  width: 25px;
+  height: 25px;
+  line-height: 1.5em;
+  margin-right: 10px;
+}
+.currencies__favourite-currencies > div h6 small {
+  color: #c4c3c4;
+}
+.currencies__favourite-currencies > div:last-child h6 small {
+  color: #76c59c;
+  display: block;
+  text-align: right;
+}
+.fav-currencies {
+  box-shadow: none;
+  margin-bottom: -25px;
+  color: #c4c3c4;
+}
+.fav-currencies h6:last-child {
+  color: #e4c4ff;
+}
+.currencies__footer span {
+  color: #818081;
+}
+/* Currencies card ends here... */
+/* Welcome page ends here... */
+/* SECTION 1 ENDS */
+
+/* SECTION 2 STARTS */
+.cryptobank__cash-back {
+  width: 220px;
+  position: relative;
+  top: 120px;
+}
+.cryptobank__cash-back h6,
+.exchange__buy-sell h6 {
+  color: #d779d3;
+}
+.cryptobank__cash-back h1,
+.exchange__buy-sell h1 {
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+.cryptobank__cash-back a,
+.exchange__buy-sell a {
+  font-size: 0.8em;
+  padding: 13px 30px;
+}
+.cryptobank__cash-back p,
+.exchange__buy-sell p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  text-align: justify;
+}
+.atm-card-section2 {
+  left: 500px;
+  bottom: 150px !important;
+}
+.two-page2 {
+  transform: rotate(10deg) !important;
+  top: -30px !important;
+  left: 90px !important;
+}
+.one-page2 {
+  transform: rotate(75deg) !important;
+  margin-left: 150px;
+  top: 80px !important;
+}
+/* SECTION 2 ENDS */
+
+/* SECTION 3 STARTS */
+.exchange__buy-sell {
+  width: 220px;
+  position: relative;
+  top: 120px;
+  left: 600px !important;
+}
+.currencies__content-page3 {
+  left: 0px !important;
+  top: 0px !important;
+}
+/* SECTIION 3 ENDS */
+
+/* Main content ends  here... */
+
+/* CSS for the typing and clearing functionality */
+.type {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.type > span {
+  color: #c973e5;
+  display: grid;
+  overflow: hidden;
+  height: 1.2em;
+  font-size: 2em;
+  /* background: -webkit-linear-gradient(180deg, #a071f9, #c973e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.type span span {
+  width: 0%;
+  max-width: max-content;
+  overflow: hidden;
+  height: inherit;
+  word-break: break-all;
+  animation: c 0.5s infinite steps(1), t 2s linear infinite alternate,
+    m 16s steps(4) infinite;
+}
+
+.type span span:before {
+  content: ' ';
+  display: inline-block;
+}
+
+@keyframes t {
+  90%,
+  100% {
+    width: 100%;
+  }
+}
+@keyframes c {
+  0%,
+  100% {
+    box-shadow: 5px 0 0 #0000;
+  }
+  50% {
+    box-shadow: 5px 0 0 white;
+  }
+}
+
+@keyframes m {
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+/* End of CSS for the typing and clearing functionality */
+
+/* Footer starts here */
+#footer {
+  width: 71%;
+  bottom: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+#footer a {
+  background: linear-gradient(90deg, #c973e5, #a071f9);
+  color: #fff;
+}
+/* Footer ends  here */
